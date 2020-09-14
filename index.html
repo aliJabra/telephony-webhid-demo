@@ -348,6 +348,7 @@
 				return;
 			}
 			device = devices[0]; //fix issue : device.open() undefined
+			console.log(device);
 			// Open the device.
 			await device.open();
 			if (!device.opened) {
